@@ -5,10 +5,12 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [
+    HomeComponent
+  ],
   imports: [
     CommonModule,
-    RouterModule.forChild([{ path: '', component: HomeComponent }]),
+    RouterModule.forChild([{ path: '', component: HomeComponent }])
   ],
 })
 export class HomeModule {}
