@@ -8,9 +8,5 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class UiButtonComponent {
   @Input() text = '';
-  @Output() UIButtonEvent = new EventEmitter<MouseEvent>();
-
-  onClickEmit(e: MouseEvent) {
-    this.UIButtonEvent.emit(e);
-  }
+  @Output() onClick = new EventEmitter<MouseEvent>();
 }
